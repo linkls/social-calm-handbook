@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>情绪稳定练习手册 · 4 部分 11 节（本期开放 3 节正文）</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+html,body{background:#F1EAE1}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:#33403D;font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:430px;margin:0 auto;background:#FAF7F2;min-height:100vh;box-shadow:0 0 60px rgba(80,90,84,.08)}
+@media(min-width:900px){
+  .wrap{max-width:1060px;display:flex;align-items:flex-start;background:#FAF7F2;padding:0}
+  .side{width:266px;flex:0 0 266px;position:sticky;top:0;height:100vh;overflow-y:auto;background:#F5EFE7;border-right:1px solid #EAE1D5;padding:26px 16px 40px}
+  .main{flex:1;min-width:0;padding:0 34px 70px}
+  .mobilenav{display:none}
+  .topbar{display:block !important}
+}
+.main{padding:0 20px 70px}
+.side{display:none}
+.mobilenav{display:block;position:sticky;top:0;z-index:30;background:rgba(250,247,242,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid #EFE8DF;padding:10px 0 9px}
+.mobilenav .mrow{display:flex;gap:7px;overflow-x:auto;padding:0 16px;-webkit-overflow-scrolling:touch}
+.mobilenav .mrow::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto;white-space:nowrap;font-size:12px;font-weight:700;color:#6B7A76;border:1px solid #EAE1D5;
+  background:#fff;border-radius:999px;padding:5px 12px;text-decoration:none}
+.mchip.on{background:#4E8C84;border-color:#4E8C84;color:#fff}
+
+/* ---------- 通用 ---------- */
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#9AA8A4;font-weight:600}
+.h1{font-size:28px;line-height:1.3;font-weight:800;letter-spacing:-.01em}
+.lede{color:#63736F;font-size:14.5px}
+.tag{display:inline-block;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:700;background:#EAF3F0;color:#4E8C84}
+.tag.a{background:#FBEADC;color:#B46B3C}.tag.c{background:#ECE9F7;color:#6E65A8}
+.tag.d{background:#E3ECF5;color:#4B7196}
+.muted{color:#8C9A96;font-size:12.5px;line-height:1.8}
+.card{background:#fff;border-radius:22px;padding:20px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07)}
+.rule{height:1px;background:#EFE8DF;margin:22px 0}
+.kicker{font-size:12px;letter-spacing:.16em;color:#9AA8A4;font-weight:700}
+
+/* ---------- 封面 ---------- */
+.cover{padding:40px 0 10px}
+.cover .h1{margin:12px 0 10px}
+.cover .lede{margin:0 0 16px}
+.cover .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.chip{background:#fff;border:1px solid #EEE5DA;border-radius:999px;padding:6px 13px;font-size:12.5px;color:#5C6B67;font-weight:600}
+.topbar{display:none}
+
+/* ---------- 目录（侧栏） ---------- */
+.side .st{font-size:12px;letter-spacing:.16em;color:#9AA8A4;font-weight:700;margin:0 6px 14px}
+.side .sp{font-size:12.5px;font-weight:800;color:#33403D;margin:20px 6px 8px;display:flex;align-items:center;gap:7px}
+.side .sp .n{width:20px;height:20px;border-radius:7px;background:#EDE5DA;color:#8C9A96;font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.side a{list-style:none;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:13px;color:#6B7A76;
+  padding:7px 10px;border-radius:10px;line-height:1.5}
+.side a:hover{background:#EFE7DC}
+.side a .st2{flex:0 0 auto;font-size:10px;font-weight:800;color:#fff;background:#71B0A4;border-radius:5px;padding:1px 5px}
+.side a .st3{flex:0 0 auto;font-size:10px;font-weight:700;color:#B0B8B4;border:1px solid #E3DCD2;border-radius:5px;padding:1px 5px}
+.side a.open{color:#33403D;font-weight:700;background:#fff;box-shadow:0 3px 10px rgba(74,90,84,.06)}
+
+/* ---------- 8 类人格 ---------- */
+.types{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+@media(min-width:900px){.types{grid-template-columns:repeat(4,1fr)}}
+.tcard{background:#fff;border-radius:16px;padding:13px 13px;box-shadow:0 4px 14px rgba(74,90,84,.06);border-left:3px solid #71B0A4}
+.tcard.b1{border-left-color:#E9A178}.tcard.b2{border-left-color:#8E86C4}.tcard.b3{border-left-color:#5B7FA6}.tcard.b4{border-left-color:#C9A15E}
+.tcard .tn{font-size:14px;font-weight:800;line-height:1.4}
+.tcard .td{font-size:12px;color:#8C9A96;margin-top:5px;line-height:1.65}
+
+/* ---------- 速查表 ---------- */
+.qtwrap{background:#fff;border-radius:22px;padding:16px 12px 12px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:14px}
+.qt{width:100%;border-collapse:collapse;table-layout:fixed}
+.qt th,.qt td{border-bottom:1px dashed #EFE8DF;padding:9px 7px;vertical-align:top;text-align:left;font-size:11.5px;line-height:1.6}
+.qt th{font-size:11.5px;color:#8C9A96;font-weight:800}
+.qt tr:last-child td{border-bottom:0}
+.qt .pn{font-weight:800;color:#33403D;font-size:12px}
+.qt .sg{color:#8C9A96}
+.qt .ans{color:#4B5C58;font-weight:600}
+.qt th:nth-child(1),.qt td:nth-child(1){width:74px}
+.qt th:nth-child(2),.qt td:nth-child(2){width:82px}
+
+/* ---------- 章节 ---------- */
+.part{margin:38px 0 0}
+.part-h{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.part-h .pn{width:30px;height:30px;border-radius:10px;background:#4E8C84;color:#fff;font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.part-h .pt{font-size:18px;font-weight:800}
+.part-sub{color:#9AA8A4;font-size:12.5px;margin:0 0 16px 40px}
+.ch{background:#fff;border-radius:24px;padding:22px 18px;box-shadow:0 8px 26px rgba(74,90,84,.08);margin-bottom:16px;scroll-margin-top:64px}
+.ch .ck{font-size:11.5px;letter-spacing:.1em;color:#B0895F;font-weight:800}
+.ch .ct{font-size:21px;font-weight:800;line-height:1.4;margin:7px 0 4px}
+.ch .cs{font-size:13px;color:#9AA8A4;margin-bottom:6px}
+.blk{margin-top:18px;padding-top:16px;border-top:1px dashed #EFE8DF}
+.blk:first-of-type{border-top:0;padding-top:4px}
+.lbl{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:800;margin-bottom:11px}
+.lbl .n{width:22px;height:22px;border-radius:8px;background:#EAF3F0;color:#4E8C84;font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.blk p{font-size:14.5px;line-height:1.78;color:#4B5C58;margin-bottom:9px}
+.blk p:last-child{margin-bottom:0}
+.blk ul{list-style:none}
+.blk li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.75;color:#4B5C58;padding:5px 0}
+.blk li .d{flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#9CC4BC;margin-top:11px}
+.blk li b{color:#33403D}
+.say{display:flex;gap:12px;align-items:flex-start;background:#FAF7F2;border:1px solid #EFE7DC;border-radius:16px;padding:14px 15px;margin-bottom:10px}
+.say .sn{flex:0 0 auto;width:22px;height:22px;border-radius:8px;background:#71B0A4;color:#fff;font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px}
+.say .st{flex:1}
+.say .st .sh{font-size:12px;font-weight:800;color:#B0895F;margin-bottom:4px;letter-spacing:.02em}
+.say .st .sq{font-size:15px;line-height:1.78;color:#33403D}
+.say .st .sn2{font-size:12.5px;color:#9AA8A4;margin-top:6px}
+.say.b2 .sn{background:#E9A178}.say.b3 .sn{background:#8E86C4}
+.prac{background:#EAF4F1;border-radius:18px;padding:16px 15px;margin-top:16px}
+.prac .lbl .n{background:#4E8C84;color:#fff}
+.prac li .d{background:#71B0A4}
+.prac .lbl{color:#2F5F59}
+.prac p,.prac li{color:#3B5B57}
+.next{margin-top:14px;background:#FBEADC;border-radius:16px;padding:14px 15px}
+.next .lbl .n{background:#E9A178;color:#fff}
+.next .lbl{color:#8A5A2E}
+.next p{color:#6B4B2C}
+.chfoot{display:flex;gap:10px;margin-top:16px}
+.chfoot .rbtn{flex:1;text-align:center;padding:12px;border:0;border-radius:14px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit;
+  background:#fff;border:1px solid #E9E1D6;color:#6B7A76;text-decoration:none}
+
+.tbd{background:#FBF7F0;border:1px dashed #E3DCD2;border-radius:20px;padding:20px 18px;margin-bottom:14px}
+.tbd .tt{font-size:16px;font-weight:800;color:#8C9A96}
+.tbd .td{font-size:13px;color:#A5AFA9;margin-top:7px;line-height:1.75}
+.tbd .td b{color:#7C8B87}
+
+.foot{text-align:center;color:#B0B8B4;font-size:11.5px;line-height:1.9;margin-top:34px;padding-top:20px;border-top:1px dashed #EFE8DF}
+.toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%) translateY(20px);background:rgba(40,52,49,.93);
+  color:#fff;padding:11px 20px;border-radius:14px;font-size:14px;opacity:0;pointer-events:none;transition:all .28s ease;z-index:99}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---------- 产品7 追加 ---------- */
+.disc{background:#F7F3EC;border-radius:16px;padding:13px 14px;margin-top:18px;font-size:12.5px;line-height:1.8;color:#7C8A86}
+.disc b{color:#54635F}
+.main p{line-height:1.9}
+.ch .blk p{line-height:1.95}
+</style>
+</head>
+<body>
+<div class="wrap">
+<aside class="side">
+<div class="st">CONTENTS</div>
+<div class="sp"><span class="n">1</span>情绪怎么冒出来的</div>
+<a href="#t1" data-t="t1"><span class="st3">框架</span>01 情绪冒头的三个信号</a>
+<a href="#t2" data-t="t2"><span class="st3">框架</span>02 身体先于情绪的那一秒</a>
+<a href="#t3" data-t="t3"><span class="st3">框架</span>03 给情绪起个准确的名字</a>
+<div class="sp"><span class="n">2</span>上头时先做什么</div>
+<a href="#c4" data-t="c4"><span class="st2">本期</span>04 上头想怼人怎么拖十秒</a>
+<a href="#t5" data-t="t5"><span class="st3">框架</span>05 呼吸与落地的三个动作</a>
+<a href="#t6" data-t="t6"><span class="st3">框架</span>06 把想法和情绪分开</a>
+<div class="sp"><span class="n">3</span>关系里的难处</div>
+<a href="#c7" data-t="c7"><span class="st2">本期</span>07 被当众否定怎么接</a>
+<a href="#c8" data-t="c8"><span class="st2">本期</span>08 被临时加活怎么挡</a>
+<a href="#t9" data-t="t9"><span class="st3">框架</span>09 别人不讲理怎么不接茬</a>
+<div class="sp"><span class="n">4</span>练成习惯</div>
+<a href="#t10" data-t="t10"><span class="st3">框架</span>10 情绪记录怎么写才有用</a>
+<a href="#t11" data-t="t11"><span class="st3">框架</span>11 复盘清单与长期节奏</a>
+<div class="sp"><span class="n">★</span>速查与说明</div>
+<a href="#quick" data-t="quick">场景速查表</a>
+<a href="#howto" data-t="howto">怎么用这本手册</a>
+</aside>
+  <div class="main">
+<div class="mobilenav"><div class="mrow">
+<a href="#top" class="mchip" data-c="top">封面</a>
+<a href="#quick" class="mchip" data-c="quick">速查表</a>
+<a href="#c4" class="mchip" data-c="c4">04 上头</a>
+<a href="#c7" class="mchip" data-c="c7">07 当众</a>
+<a href="#c8" class="mchip" data-c="c8">08 加活</a>
+<a href="#howto" class="mchip" data-c="howto">怎么用</a>
+</div></div>
+    <section class="cover" id="top">
+      <div class="eyebrow">CALM PRACTICE HANDBOOK</div>
+      <h1 class="h1">情绪稳定练习手册</h1>
+      <p class="lede">上头想怼人、被当众否定、被临时加活 —— 4 部分 11 节里先给你 3 节正文。<br>先判断，再开口；先落地，再说话。</p>
+      <div class="chips">
+        <span class="chip">4 部分 11 节</span>
+        <span class="chip">本期开放 3 节正文</span>
+        <span class="chip">1 张场景速查表</span>
+        <span class="chip">每节配 1 个练习</span>
+      </div>
+    </section>
+
+    <div class="card">
+      <div class="kicker">怎么用这本手册</div>
+      <p>情绪上头时，人缺的通常不是道理，而是<b>一个能用的动作</b>：先停十秒、先看身体、先把话换成只讲事实。</p>
+      <p>全书共 4 部分 11 节，<b>本期开放 3 节正文</b>（04 上头想怼人怎么拖十秒 / 07 被当众否定怎么接 / 08 被临时加活怎么挡），其余章节目录已列出，正文待后续展开。</p>
+      <div class="rule"></div>
+      <p class="muted">每节正文固定五段：<b>场景 → 先判断什么 → 三种具体说法 → 对方继续劝说怎么回 → 今天能完成的小练习</b>。本内容是自我观察与练习工具，不构成专业心理评估、诊断或医疗建议；话术是参考句不是标准答案，请按你面对的人和场合调整。</p>
+    </div>
+
+    <section id="quick">
+      <h2>场景速查表</h2>
+      <p class="muted">来不及读整节时看这张表：认出场景 → 用一句话 → 补一个动作。</p>
+      <div class="qtwrap">
+        <table class="qt">
+          <thead><tr><th>场景</th><th>什么时候用</th><th>一句话怎么说</th><th>补一个动作</th></tr></thead>
+          <tbody>
+<tr><td class="pn">情绪冒头</td><td class="sg">话比脑子快</td><td class="ans">先数十秒再开口</td><td class="sg">把话换成只讲事实</td></tr>
+<tr><td class="pn">身体先动</td><td class="sg">手心出汗心跳快</td><td class="ans">先看身体不看想法</td><td class="sg">脚踩地三次</td></tr>
+<tr><td class="pn">给情绪起名字</td><td class="sg">说不上是什么情绪</td><td class="ans">先命名再处理</td><td class="sg">说一句「我是被否定了」</td></tr>
+<tr><td class="pn">上头想怼人</td><td class="sg">狠话已经出口</td><td class="ans">先补救再复盘</td><td class="sg">当场补一句收住的话</td></tr>
+<tr><td class="pn">呼吸与落地</td><td class="sg">脑子一片空白</td><td class="ans">呼气比吸气长</td><td class="sg">一次做三回</td></tr>
+<tr><td class="pn">想法与情绪分开</td><td class="sg">觉得被针对</td><td class="ans">分两句写下来</td><td class="sg">一句是判断，一句是反应</td></tr>
+<tr><td class="pn">被当众否定</td><td class="sg">会上直接被否</td><td class="ans">先确认他否的是哪部分</td><td class="sg">会后补一版改法</td></tr>
+<tr><td class="pn">被临时加活</td><td class="sg">下班前多来一件</td><td class="ans">先报你的排期</td><td class="sg">说清挪走哪一件</td></tr>
+<tr><td class="pn">别人不讲理</td><td class="sg">越说越离谱</td><td class="ans">不接他的情绪</td><td class="sg">把话拉回事实</td></tr>
+<tr><td class="pn">情绪记录</td><td class="sg">想复盘却记不住</td><td class="ans">记三行</td><td class="sg">触发-身体-反应</td></tr>
+<tr><td class="pn">长期节奏</td><td class="sg">练一阵就忘</td><td class="ans">每周一次</td><td class="sg">定一个固定时间</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">1</span><span class="pt">情绪怎么冒出来的</span></div>
+      <p class="part-sub">对应场景：情绪冒头 · 身体先动 · 给情绪起名字</p>
+<div class="tbd" id="t1">
+<div class="tt">01 情绪冒头的三个信号</div>
+<div class="td">识别信号：话已经说出去了，回看才发现不是自己想说的<br>改法：改法：认信号——语速变快、句子变短、开始讲道理<br>记住一句：<b>信号出现的时候，就是你还有选择的时候。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t2">
+<div class="tt">02 身体先于情绪的那一秒</div>
+<div class="td">识别信号：话还没想好，胸口已经紧了<br>改法：改法：先处理身体——脚踩地、呼气拉长、肩松下来<br>记住一句：<b>情绪从身体起，先落地再说话。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t3">
+<div class="tt">03 给情绪起个准确的名字</div>
+<div class="td">识别信号：心里一团乱，只能说「我很烦」<br>改法：改法：把它拆成——我是被否定了 / 我被晾着了 / 我累了<br>记住一句：<b>名字越具体，处理越有办法。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">2</span><span class="pt">上头时先做什么</span></div>
+      <p class="part-sub">对应场景：上头想怼人 · 呼吸与落地 · 想法与情绪分开</p>
+<article class="ch" id="c4">
+<div class="ck">第 04 节 · 本期正文</div>
+<h2 class="ct">上头想怼人怎么拖十秒</h2>
+<p class="cs">上头时说出口的那句狠话，事后要用十倍的力气去收拾。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>会议室里他一句话把你否了，你脸上一热，嘴比脑子快，一句难听的话已经出口。</p>
+<p>很多人以为情绪稳定是「忍着不说」。其实上头时说的那句怼人的话，对方记住的是那句话，你要解释的是原因。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>你现在是上头，还是判断？</b>上头的标志是想让对方难受；判断是想让事情往前走。目的不同，选法就不同。</span></li>
+<li><span class="d"></span><span><b>能不能等十秒？</b>能等十秒，就还有选择。等不了，说明你已经在对方的节奏里了。</span></li>
+<li><span class="d"></span><span><b>在场的人是谁？</b>有同事，也有你要长期合作的人。怼话的代价往往落在旁边那些人心里。</span></li>
+<li><span class="d"></span><span><b>你想要的是道歉还是改正？</b>多数争执要的是把事改掉，不是把人压下去。两件事要分开处理。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">拖延式</div><div class="sq">「我先记下你说的这点，等我看完材料再回你。」</div><div class="sn2">适用：情绪已经起来，你需要一个物理上的间隔。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">复述式</div><div class="sq">「你说的是 X 这点有问题，对吧？我先确认一下我理解得对不对。」</div><div class="sn2">适用：你需要把对话拉回事实，而不是拉回情绪。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">收束式</div><div class="sq">「这一点我保留意见，结论我们先定下来，这一条回头单独聊。」</div><div class="sn2">适用：当众场合，先把场子保住，私下的账另算。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续劝说怎么回</div><ul>
+<li><span class="d"></span><span><b>「你到底同不同意？」</b>→ 「结论我同意，这一条我保留意见，先记下来，我们把剩下的定完。」</span></li>
+<li><span class="d"></span><span><b>「有意见你就直说，别绕。」</b>→ 「我直说了：我担心的是 X 这一环。你先看看这个担心成不成立。」</span></li>
+<li><span class="d"></span><span><b>「行行行不说了，你这人真没意思。」</b>→ 「刚才那句我语气不好，这页我们继续往下看。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>今天有想怼人的时刻，先在心里数十秒再开口，数完只说事实，不说人。</span></li>
+<li><span class="d"></span><span>准备一句自己的「暂停句」，比如「我先想两分钟再回你」，写进手机备忘录。</span></li>
+<li><span class="d"></span><span>睡前回看一遍：今天有哪句话你现在还后悔，把它写下来。</span></li>
+</ul></div></div>
+<div class="chfoot"><a class="rbtn" href="#quick">回到场景速查表</a></div>
+</article>
+<div class="tbd" id="t5">
+<div class="tt">05 呼吸与落地的三个动作</div>
+<div class="td">识别信号：心跳快，坐不住，注意力散掉<br>改法：改法：三个动作连起来做——呼气拉长、脚踩地、手掌压桌<br>记住一句：<b>三个动作做三回，比想通道理更快。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t6">
+<div class="tt">06 把想法和情绪分开</div>
+<div class="td">识别信号：把「他针对我」当成事实<br>改法：改法：写两行——想法是什么，情绪是什么<br>记住一句：<b>想法可以核对，情绪只需要被承认。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">3</span><span class="pt">关系里的难处</span></div>
+      <p class="part-sub">对应场景：被当众否定 · 被临时加活 · 别人不讲理</p>
+<article class="ch" id="c7">
+<div class="ck">第 07 节 · 本期正文</div>
+<h2 class="ct">被当众否定怎么接</h2>
+<p class="cs">当众否定要处理两件事：情绪，和你在别人眼里的分量。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>你刚讲完方案，他没问你，直接说「这个方向不对」，下面一片安静。</p>
+<p>私下否定和当众否定不是一回事：私下否定你只需要处理情绪，当众否定还要处理在场的人怎么看你。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>他要否定的是方案还是你？</b>听他的用词：说「这个思路有问题」是针对方案，说「你这不行」是针对人。分清了，反应方式不同。</span></li>
+<li><span class="d"></span><span><b>在场的人现在在等什么？</b>多数人在等你稳不下来的样子。你稳住，这场话就还在你手里。</span></li>
+<li><span class="d"></span><span><b>你有没有当场反驳的底气？</b>有数据、有先例就反驳；只有感觉，就先收下，别在情绪上头的时候拼气势。</span></li>
+<li><span class="d"></span><span><b>这一轮你想要什么？</b>把事纠回来、把面子找回来、还是把话说明白，三个目标不能同时抢。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">确认式</div><div class="sq">「我先确认一下，你指的是 X 还是 Y？如果是 Y，我这边有数据可以补上。」</div><div class="sn2">适用：对方表述含糊，你需要一个准确的范围。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">收下式</div><div class="sq">「这一条我记下了，会后我把改法整理出来发你。」</div><div class="sn2">适用：公开场合，先把节奏和体面接住，事后再谈细节。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">对照式</div><div class="sq">「我们按之前定的目标对一下：这版要解决的是 X，这版解决了吗？」</div><div class="sn2">适用：你手上有依据，能把讨论拉回目标而不是拉回面子。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续劝说怎么回</div><ul>
+<li><span class="d"></span><span><b>「你还要犟？」</b>→ 「我不犟。我把两种做法的差别列出来，你选一个，我们今天定下来。」</span></li>
+<li><span class="d"></span><span><b>「你们组做的东西都不行。」</b>→ 「这次的问题我接，具体卡在 X。我今天出改法，明天给你。」</span></li>
+<li><span class="d"></span><span><b>「那你说怎么办？」</b>→ 「我给两个方案：一个是我马上改，一个是先补一段数据再定。你说走哪个。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>写下你上一次被当众否定的时间、地点、在场的人。</span></li>
+<li><span class="d"></span><span>写一句你当时想说的狠话，把它改写成一句只讲事实的话。</span></li>
+<li><span class="d"></span><span>记住这个句式：「&lt;b&gt;这条我记下了。我的顾虑是 X，我今天给改法。&lt;/b&gt;」</span></li>
+</ul></div></div>
+<div class="chfoot"><a class="rbtn" href="#quick">回到场景速查表</a></div>
+</article>
+<article class="ch" id="c8">
+<div class="ck">第 08 节 · 本期正文</div>
+<h2 class="ct">被临时加活怎么挡</h2>
+<p class="cs">它带着「顺手」两个字，真正的问题是它挤掉了你明天的安排。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>下班前十分钟，群里 @ 你：「这个你顺手也做一下，明天要用。」</p>
+<p>被临时加活之所以难挡，是因为它听着不大。真正麻烦的不是这件事，是它把你明天的安排顶掉了，而你通常当天才知道。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>这件事到底多大？</b>用「明天要」和「这一件」来估：影响多少人、要不要返工、能不能拆开做。</span></li>
+<li><span class="d"></span><span><b>它替换掉了什么？</b>挡之前先想清楚你准备放下哪一件，或者准备把哪一天往后挪。</span></li>
+<li><span class="d"></span><span><b>当场能答应吗？</b>如果你已经排满了，直说排满，比先接下来再后悔好。</span></li>
+<li><span class="d"></span><span><b>你要的是拒绝还是改条件？</b>有时不必说不，只要改一下交付时间或范围，事情就回到你承受得起的形状。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">排期式</div><div class="sq">「明天上午我手上有 X，这件事我放到下午做，能赶上吗？」</div><div class="sn2">适用：事情本身可以接，你要的是位置和顺序。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">拆解式</div><div class="sq">「这个我拆一下：先出 X 部分，Y 部分我明天上午补，可以吗？」</div><div class="sn2">适用：对方时间紧，你要把可交付的部分先给出去。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">换条件式</div><div class="sq">「可以接，不过原来的 Z 要往后挪半天。你定一下哪个优先。」</div><div class="sn2">适用：你想接，但需要对方帮你做一次取舍。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续劝说怎么回</div><ul>
+<li><span class="d"></span><span><b>「明天就要啊。」</b>→ 「那我今天先出 X，Y 明早给你。你先按 X 用，别等齐了再动。」</span></li>
+<li><span class="d"></span><span><b>「别人都能做，你为什么不行？」</b>→ 「我不是不行，是手上有 Z 这件更早要交。你说哪个优先，我按你说的排。」</span></li>
+<li><span class="d"></span><span><b>「你先做，别的再说。」</b>→ 「行，我接。原来那件 Z 我要顺延到后天，这句我也在群里说一声。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>今天把明天手上的活按顺序写一行，写清哪一件是别人不能等的。</span></li>
+<li><span class="d"></span><span>练一句挡活的话：「&lt;b&gt;这个我能做，明天上午我在 X 上，下午给你。&lt;/b&gt;」</span></li>
+<li><span class="d"></span><span>事后记一句：你挡下来的时候，对方是什么反应。</span></li>
+</ul></div></div>
+<div class="chfoot"><a class="rbtn" href="#quick">回到场景速查表</a></div>
+</article>
+<div class="tbd" id="t9">
+<div class="tt">09 别人不讲理怎么不接茬</div>
+<div class="td">识别信号：越吵越乱，对方声音越来越大<br>改法：改法：不接情绪，只接事实——时间、范围、交付<br>记住一句：<b>不接茬不是忍，是不把战场让给对方。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">4</span><span class="pt">练成习惯</span></div>
+      <p class="part-sub">对应场景：情绪记录 · 复盘清单与长期节奏</p>
+<div class="tbd" id="t10">
+<div class="tt">10 情绪记录怎么写才有用</div>
+<div class="td">识别信号：想复盘，但当时的事一点也想不起来<br>改法：改法：三行就够——触发、身体、反应<br>记住一句：<b>记三行比写长篇有用。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t11">
+<div class="tt">11 复盘清单与长期节奏</div>
+<div class="td">识别信号：练了一阵就慢慢回到原样<br>改法：改法：定一个固定时间，每周一翻一次记录<br>记住一句：<b>节奏比强度更能改人。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <section id="howto">
+      <div class="card">
+        <div class="kicker">交付与使用说明</div>
+        <p>这是一份单文件网页资料，拍下后自动发货一条链接，手机浏览器打开就能用，同一条链接可以反复使用。</p>
+        <p class="muted">整个页面是单个网页文件，提前存在手机里断网也能看；手机上先收藏，下次直接点开。本内容是自我观察与练习工具，不构成专业心理评估、诊断或医疗建议。</p>
+      </div>
+      <div class="disc"><b>售后说明</b><br>虚拟资料，付款后不支持退款。页面打不开或显示异常，可在订单里联系售后处理。</div>
+    </section>
+
+    <div class="foot">
+      情绪稳定练习手册 · 4 部分 11 节，本期开放 3 节正文<br>
+      单文件网页，手机打开即用，断网也能看
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.side a'));
+  var chips=[].slice.call(document.querySelectorAll('.mchip'));
+  function go(e){
+    var href=this.getAttribute('href');
+    if(!href||href.charAt(0)!=='#') return;
+    var el=document.querySelector(href);
+    if(!el) return;
+    e.preventDefault();
+    var top=el.getBoundingClientRect().top+window.pageYOffset-64;
+    window.scrollTo({top:top,behavior:'smooth'});
+  }
+  links.forEach(function(a){a.addEventListener('click',go);});
+  chips.forEach(function(a){a.addEventListener('click',go);});
+
+  var ids=links.map(function(a){return a.getAttribute('data-t');});
+  function highlight(){
+    var y=window.pageYOffset+90, cur='';
+    ids.forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.getBoundingClientRect().top+window.pageYOffset<=y) cur=id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('open',a.getAttribute('data-t')===cur);
+    });
+    chips.forEach(function(a){
+      a.classList.toggle('on',a.getAttribute('data-c')===cur);
+    });
+  }
+  var t=null;
+  window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=null;highlight();},80);});
+  highlight();
+})();
+</script>
+</body>
+</html>
